@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Cadastro de Produto</h1>
+  <form id="product-form">
+    <label for="product-name">Nome:</label>
+    <input type="text" id="product-name" required>
+    <label for="product-description">Descrição:</label>
+    <input type="text" id="product-description" required>
+    <label for="product-price">Preço:</label>
+    <input type="number" id="product-price" step="0.01" required>
+    <label for="product-disponibilidade">Disponibilidade:</label>
+    <select id="product-disponibilidade" required>
+      <option value="SIM">Sim</option>
+      <option value="NÃO">Não</option>
+    </select>
+    <button type="submit">Salvar Produto</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
